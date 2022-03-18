@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Home</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+    
+
+    <header>
+        <div id="currentImage">
+            <div id="text-container">
+            </div> 
+        </div>
+
+        <div class="menu-container">
+            <div class="left-container">
+                <a class="mobile-burger" class="icon" onclick="toggleMenu();">
+                    <img class="mobile-menu-icon" id="menu-icon" src="./images/burger-menu-icon.svg" alt="burger-menu-icon" height="30px">
+                    <img class="mobile-menu-close" id="menu-close" src="./images/burger-menu-close.svg" alt="burger-menu-close" height="30px"> 
+                </a>
+                <img class="menu-icon" src="./images/burger-menu-icon.svg" alt="burger-menu" height="45px">
+                <h1 class="logo">zara home</h1>
+            </div>
+            <nav id="nav-links">
+                <ul>
+                    <li><a>noutăți</a></li> <br>
+                    <li><a>dormitor</a></li>
+                    <li><a>îmbrăcăminte și încălțăminte</a></li>
+                    <li><a>camera de zi</a></li>
+                    <li><a>bucătărie</a></li>
+                    <li><a>zona de luat masa</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="mobile-logo">zara home</h1>
+        <div class="search-bar">
+            <a>
+                <p>căutare __________</p>
+            </a>
+        </div>
+
+        <div class="right-icons">
+                <a>
+                    <svg width="14px" height="14px" id="Icon-search" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                        <g>
+                            <path d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"/>
+                        </g>
+                    </svg>
+                </a>
+                <div class="login right">
+                    <a>
+                        <svg width="14px" height="14px" version="1.1" id="Icon-auth" x="0px" y="0px"
+                            viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:transparent;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                                .st1{fill:transparent;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+                            </style>
+                            <circle class="st0" cx="16" cy="16" r="14"/>
+                            <circle class="st0" cx="16" cy="13" r="5"/>
+                            <path class="st0" d="M5.4,25.1c1.8-4.1,5.8-7,10.6-7c4.8,0,8.9,2.9,10.6,7"/>
+                        </svg>
+                        
+                        <p>autentificați-vă</p>
+                    </a>
+                </div>
+                <div class="shopping-cart right">
+                    <a>
+                        <svg width="14px" height="14px" version="1.1" id="Icon-shop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 208.955 208.955" style="enable-background:new 0 0 208.955 208.955;" xml:space="preserve">
+                            <path d="M190.85,200.227L178.135,58.626c-0.347-3.867-3.588-6.829-7.47-6.829h-26.221V39.971c0-22.04-17.93-39.971-39.969-39.971
+                            C82.437,0,64.509,17.931,64.509,39.971v11.826H38.27c-3.882,0-7.123,2.962-7.47,6.829L18.035,200.784
+                            c-0.188,2.098,0.514,4.177,1.935,5.731s3.43,2.439,5.535,2.439h157.926c0.006,0,0.014,0,0.02,0c4.143,0,7.5-3.358,7.5-7.5
+                            C190.95,201.037,190.916,200.626,190.85,200.227z M79.509,39.971c0-13.769,11.2-24.971,24.967-24.971
+                            c13.768,0,24.969,11.202,24.969,24.971v11.826H79.509V39.971z M33.709,193.955L45.127,66.797h19.382v13.412
+                            c0,4.142,3.357,7.5,7.5,7.5c4.143,0,7.5-3.358,7.5-7.5V66.797h49.936v13.412c0,4.142,3.357,7.5,7.5,7.5c4.143,0,7.5-3.358,7.5-7.5
+                            V66.797h19.364l11.418,127.158H33.709z"/>
+                        </svg>
+
+                        <p>0</p>
+                    </a>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p>aaaaaaaaaa</p>
+            <div class='menu'>
+                <span id="span-1" class='bar'></span>
+                <span id="span-2" class='bar'></span>
+                <span id="span-3" class='bar'></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- js for mobile burger menu -->
+    <script>
+        function toggleMenu() {
+            var openIcon = document.getElementById("menu-icon");
+            var closeIcon = document.getElementById("menu-close");
+            var x = document.getElementById("nav-links");
+            if (openIcon.style.display === "none") {
+                x.style.left = "-100%";
+                closeIcon.style.display = "none";
+                openIcon.style.display = "block";
+            } else {
+                x.style.left = "0";
+                openIcon.style.display = "none";
+                closeIcon.style.display = "block";
+            }
+        }
+    </script>
+
+    <!-- js for slideshow -->
+    <script>
+        var images = [
+            './images/hero-1.jpg',
+            './images/hero-2-new-york.jpg',
+            './images/hero-3-paris.jpg'
+        ];
+
+        var texts = [
+            'los<br>angeles',
+            'new york',
+            'paris'
+        ];
+
+        var ids = [
+            'los-angeles-p',
+            'new-york-p',
+            'paris-p'
+        ];
+
+        var imageEle = [];
+        var currImage = 0;
+        var holder = document.getElementById("currentImage");
+        var pholder = document.getElementById("text-container");
+
+        var textEle =[];
+
+        function imagesPreload() {
+            for (var i = 0; i < images.length; i++) {
+                var img = new Image();
+                img.src = images[i];
+                img.className = "translateOrigin";
+                holder.appendChild(img);
+                imageEle.push(img);
+
+                var p = document.createElement('p');
+                p.innerHTML = texts[i];
+                p.className = "translateOrigin";
+                p.id = ids[i];
+                pholder.appendChild(p);
+                textEle.push(p);
+                console.log(p);
+            }
+        }
+
+        imagesPreload();
+
+        function slideShow(startAt) {
+            var holder = document.getElementById("currentImage");
+            imageEle[currImage].className = "translateIn";
+            
+
+            var pholder = document.getElementById("image-text");
+            textEle[currImage].className = "translateIn";
+
+            nextPicture();
+        }
+
+        function nextPicture() {
+            setTimeout(function () {
+                var img = imageEle[currImage];
+                img.addEventListener("transitionend", transitionEnd, false);
+                img.className = "translateLeft";
+
+                var text = textEle[currImage];
+                text.addEventListener("transitionend", transitionEnd, false);
+                text.className = "translateLeft";
+                
+
+                if (currImage == 2) {
+                    currImage = 0;
+                } else {
+                    currImage++;
+                }
+                imageEle[currImage].className = "translateIn";
+
+                textEle[currImage].className = "translateIn";
+                
+                /* Reset the image to original position */
+                function transitionEnd() {
+                    img.className = "translateOrigin";
+                    img.removeEventListener("transitionend", transitionEnd, false);
+                    nextPicture();
+
+                    text.className = "translateOrigin";
+                    text.removeEventListener("transitionend", transitionEnd, false);
+                }
+            }, 3000);
+        };
+
+        slideShow(currImage);
+    </script>
+   
+</body>
+</html>
