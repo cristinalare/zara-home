@@ -5,16 +5,29 @@ html {
     overflow-x: hidden;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.right-icons,
+.search-bar {
+    z-index: 20;
+}
+
 .mobile-logo,
 .mobile-burger {
     display: none;
 }
 
 a,
-#Icon-auth .st0,
-#Icon-shop,
-#Icon-search {
+.left-container {
     cursor: pointer;
+}
+
+a,
+#Icon-auth .st0,
+#Icon-search,
+#Icon-shop {
     transition: all 0.4s ease-out;
 }
 
@@ -63,7 +76,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.7em 0.5em;
-
 }
 
 /* left */
@@ -144,7 +156,6 @@ header {
 ================== */
 
 nav {
-   
     background-color: white;
     width: 18em;
     height: 100vh; 
@@ -153,13 +164,12 @@ nav {
     left: -100%;
     font-size: 1.125rem;
 
-    bottom: 0;
+    top: 0;
     display: flex;
     justify-content: left;
     align-items: center;
     transition: left 0.7s ease;
 }
-
 
 nav li {
     padding: 0.5em 0.5em;
@@ -217,7 +227,6 @@ nav li {
     overflow: hidden;
     width: 100%;
     z-index: -1;
-    
 }
 
 #currentImage {
@@ -279,9 +288,6 @@ header {
     }
 }
 
-
-
-
 /* hero img slide from left */
 .translateOrigin {
     transition: none;
@@ -296,27 +302,4 @@ header {
 .translateIn {
     transition: transform 3s;
     transform: translate3d(0, 0, 0) !important;
-}
-
-/* incercare pt burger menu */
-
-div.menu {
-    width:32px;
-    margin:35px auto; 
-    border: 2px solid red;
-
-}
-
-
-.bar {
-        display:block;
-        width:100%;
-        height:3px;
-        border-radius:2px;
-        background-color: black;
-}
-
-#span-2,
-#span-3 {
-    margin-top: 8px;
 }
